@@ -2,7 +2,7 @@
 // import viteLogo from "/vite.svg";
 import "./App.css";
 
-function App() {
+export function App() {
   return (
     <div className="newClass">
       <h1>This is basic of react.</h1>
@@ -28,4 +28,4 @@ function handelClick() {
   alert("ok");
 }
 
-export default App;
+// export default App;

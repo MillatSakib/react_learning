@@ -1,4 +1,5 @@
 import ListUsingMap from "./4.1.listUsingMap";
+import "./App.css";
 
 function ListUsingMapF() {
   const actors = ["Sakib", " Shoriful Raj", "Jasim", "Rubel"];

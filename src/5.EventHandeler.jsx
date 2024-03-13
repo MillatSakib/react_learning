@@ -23,8 +23,9 @@ function HandelClick() {
   );
 }
 
-function handelClick(addFive = 5) {
-  alert("button clicked" + addFive);
+function handelClick(e, addFive = 5) {
+  // alert("button clicked" + addFive);
+  console.log(addFive);
 }
 
 export default HandelClick;

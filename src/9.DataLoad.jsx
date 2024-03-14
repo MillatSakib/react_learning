@@ -24,6 +24,9 @@ function Country({ country }) {
       <h3>Country Name: {country?.name?.common}</h3>
       <h3>
         <img src={country?.flags?.png}></img>
+        <p>Population: {country?.population}</p>
+        <p>Area: {country?.area}</p>
+        <p>Code: {country?.cca3}</p>
       </h3>
     </div>
   );

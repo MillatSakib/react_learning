@@ -19,6 +19,10 @@ const Contries = () => {
 };
 
 function Country({ country }) {
+  const [visit, setVisit] = useState(false);
+  const handelVisited = () => {
+    setVisit(!visit);
+  };
   return (
     <div className="newInnerClass">
       <h3>Country Name: {country?.name?.common}</h3>
@@ -27,6 +31,10 @@ function Country({ country }) {
         <p>Population: {country?.population}</p>
         <p>Area: {country?.area}</p>
         <p>Code: {country?.cca3}</p>
+        <button onClick={handelVisited} disabled={visit}>
+          Visited
+        </button>
+        {visit ? "I visited this country." : "I want to visit this country."}
       </h3>
     </div>
   );
